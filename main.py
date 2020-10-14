@@ -13,7 +13,6 @@ batch_size = 32
 opt = Adam(lr=0.0001)
 
 x_data = pandas.read_csv('train_data.csv')
-x_data = x_data
 cutoff_percent = 0.1
 ticker = 'AAPL'
 
@@ -42,10 +41,3 @@ num_epochs = 100
 model.fit(train_gen,
           steps_per_epoch = 1000, # some random number for now
           epochs=num_epochs)
-
-
-
-
-
-
-
