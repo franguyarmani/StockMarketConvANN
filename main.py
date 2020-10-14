@@ -23,6 +23,8 @@ data_generator = DataGenerator(x_data, x_len, y_len, cutoff_percent, batch_size,
 
 train_gen = data_generator.generator()
 
+# francis sucks
+
 example_x, example_y = train_gen.next()
 input_shape = (example_x.shape[1], example_x.shape[2])
 
